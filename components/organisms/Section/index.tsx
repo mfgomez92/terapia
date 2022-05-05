@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Button, Container, Flex } from '@chakra-ui/react'
+import { Box, Button, Container, Flex, useMediaQuery } from '@chakra-ui/react'
 import Image from 'next/image'
 import TitleSection from '../../molecules/TitleSection'
 
@@ -16,12 +16,13 @@ interface Props {
 }
 
 export default function Section(props: Props) {
-    const { title, subtitle, image, imageWidth, imageHeight, imageAlt, buttonLabel="More Info", buttonVariant = "darksolid", buttonOnClick=() => { } } = props
+    const { title, subtitle, image, imageWidth, imageHeight, imageAlt, buttonLabel = "More Info", buttonVariant = "darksolid", buttonOnClick = () => { } } = props
+    const [isMobile] = useMediaQuery('(min-width: 768px)')
     return (
         <Box position={'relative'} as="section">
-            <Container maxWidth={"container.xl"} py={12} pr={0}>
-                <Flex justifyContent={"space-between"} gap={25} direction={["column", "column", "row", "row"]} >
-                    <Image src={image} layout="intrinsic" alt={imageAlt} width={imageWidth} height={imageHeight} />
+            <Container maxWidth={"container.xl"} py={12}>
+                <Flex justifyContent={"space-between"} alignItems={"center"} gap={25} height={"auto"} direction={["column", "column", "row", "row"]} >
+                    <Image src={image} alt={imageAlt} layout={"fixed"} width={!isMobile ? imageWidth : imageWidth * 2} height={!isMobile ? imageHeight : imageHeight * 2} />
                     <Box width={["100%", "100%", "45%", "lg"]} alignSelf={"center"} textAlign={["center", "center", "left", "left"]} >
                         <TitleSection
                             title={title}
@@ -37,7 +38,7 @@ export default function Section(props: Props) {
                 backgroundColor={'brand.softblue'}
                 left={0}
                 top={["15%", "40%", "40%"]}
-                height={["30%", "38%", "60%"]}
+                height={["25%", "38%", "60%"]}
                 width={["70%", "50%", "30%", "30%"]}
                 borderRightRadius={'full'}
                 zIndex={-1} />
