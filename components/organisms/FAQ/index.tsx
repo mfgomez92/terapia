@@ -17,19 +17,14 @@ export default function FAQ() {
         <Accordion py={6}>
           <AccordionItem>
             <AccordionButton >
-              <Heading _hover={{color:"brand.softred"}} as="h6" fontSize={"lg"} color={"brand.verydarkblue"} fontWeight={500} flex='1' textAlign='left'>
+              <Heading _hover={{ color: "brand.softred" }} as="h6" fontSize={"lg"} color={"brand.verydarkblue"} fontWeight={500} flex='1' textAlign='left'>
                 What is Bookmark?
               </Heading>
-              <Button
-                aria-label='Home'
-                variant='ghost'
-                p={0}
-              >
-                <Image
-                  src={'/icons/icon-arrow.svg'} alt='menu' layout='fixed' width={18}
-                  height={12}
-                />
-              </Button>
+
+              <Image
+                src={'/icons/icon-arrow.svg'} alt='menu' layout='fixed' width={18}
+                height={12}
+              />
             </AccordionButton>
             <AccordionPanel pb={4} textAlign={"left"} >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
@@ -39,19 +34,13 @@ export default function FAQ() {
 
           <AccordionItem>
             <AccordionButton>
-              <Heading _hover={{color:"brand.softred"}} as="h6" fontSize={"lg"} color={"brand.verydarkblue"} fontWeight={500} flex='1' textAlign='left'>
+              <Heading _hover={{ color: "brand.softred" }} as="h6" fontSize={"lg"} color={"brand.verydarkblue"} fontWeight={500} flex='1' textAlign='left'>
                 How can I request a new browser?
               </Heading>
-              <Button
-                aria-label='Home'
-                variant='ghost'
-                p={0}
-              >
-                <Image
-                  src={'/icons/icon-arrow.svg'} alt='menu' layout='fixed' width={18}
-                  height={12}
-                />
-              </Button>
+              <Image
+                src={'/icons/icon-arrow.svg'} alt='menu' layout='fixed' width={18}
+                height={12}
+              />
             </AccordionButton>
             <AccordionPanel pb={4} textAlign={"left"} >
               Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
@@ -62,19 +51,13 @@ export default function FAQ() {
           </AccordionItem>
           <AccordionItem>
             <AccordionButton>
-              <Heading _hover={{color:"brand.softred"}} as="h6" fontSize={"lg"} color={"brand.verydarkblue"} fontWeight={500} flex='1' textAlign='left'>
+              <Heading _hover={{ color: "brand.softred" }} as="h6" fontSize={"lg"} color={"brand.verydarkblue"} fontWeight={500} flex='1' textAlign='left'>
                 Is there a mobile app?
               </Heading>
-              <Button
-                aria-label='Home'
-                variant='ghost'
-                p={0}
-              >
-                <Image
-                  src={'/icons/icon-arrow.svg'} alt='menu' layout='fixed' width={18}
-                  height={12}
-                />
-              </Button>
+              <Image
+                src={'/icons/icon-arrow.svg'} alt='menu' layout='fixed' width={18}
+                height={12}
+              />
             </AccordionButton>
             <AccordionPanel pb={4} textAlign={"left"} >
               Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
@@ -85,20 +68,13 @@ export default function FAQ() {
 
           <AccordionItem>
             <AccordionButton>
-              <Heading _hover={{color:"brand.softred"}} as="h6" fontSize={"lg"} color={"brand.verydarkblue"} fontWeight={500} flex='1' textAlign='left'>
+              <Heading _hover={{ color: "brand.softred" }} as="h6" fontSize={"lg"} color={"brand.verydarkblue"} fontWeight={500} flex='1' textAlign='left'>
                 What about other Chromium browsers?
               </Heading>
-
-              <Button
-                aria-label='Home'
-                variant='ghost'
-                p={0}
-              >
-                <Image
-                  src={'/icons/icon-arrow.svg'} alt='menu' layout='fixed' width={18}
-                  height={12}
-                />
-              </Button>
+              <Image
+                src={'/icons/icon-arrow.svg'} alt='menu' layout='fixed' width={18}
+                height={12}
+              />
             </AccordionButton>
             <AccordionPanel pb={4} textAlign={"left"} >
               Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam

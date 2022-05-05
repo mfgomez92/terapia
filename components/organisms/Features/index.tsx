@@ -15,12 +15,12 @@ export default function Features() {
         </Box>
       </Container>
       <Tabs isFitted orientation={isMobile ? "horizontal" : "vertical"}>
-        <Box as="div" display="flex" flexDirection={"column"}>
+        <Box display="flex" flexDirection={"column"}>
           <Container maxWidth={"2xl"} textAlign="center"  >
-            <TabList>
-              <Tab>Simple Bookmarking</Tab>
-              <Tab>Speedy Searching</Tab>
-              <Tab>Easy Sharing</Tab>
+            <TabList borderColor={"brand.grayishblue"} borderBottom={"2px solid"} borderInlineStart={"none"}>
+              <Tab borderInlineStart={"none"}  borderBottom={"4px solid"}>Simple Bookmarking</Tab>
+              <Tab borderInlineStart={"none"} borderBottom={"4px solid"}>Speedy Searching</Tab>
+              <Tab borderInlineStart={"none"}borderBottom={"4px solid"}>Easy Sharing</Tab>
             </TabList>
           </Container>
           <TabPanels>
