@@ -6,16 +6,20 @@ import { Box, Button, Container, Flex, IconButton, Spacer } from '@chakra-ui/rea
 export default function NavBar() {
   return (
     <Container maxWidth={"container.xl"} py={12}>
-      <Flex justifyContent={"space-between"}>
+      <Flex justifyContent={"space-between"}alignItems={"center"} >
         <Link href={'/'} passHref>
-          < IconButton
+          <Button
             aria-label='Home'
             variant='ghost'
-            icon={<Image
-              src={'/logos/logo-bookmark.svg'} alt='menu'
-              width={148}
-              height={25} />}
-          />
+            width={148}
+            height={25}
+            minWidth={148}
+            p={0}
+          >
+            <Image
+              src={'/logos/logo-bookmark.svg'} alt='menu' layout='fill'
+            />
+          </Button>
         </Link>
         <Spacer />
         <Box w='28rem' h='10' display={['flex', 'flex', 'block', 'block']} justifyContent={'flex-end'}>
@@ -30,15 +34,22 @@ export default function NavBar() {
             </Link>
             <Button variant='solid'>Login</Button>
           </Flex>
-          < IconButton
-            aria-label='Open Menu'
-            variant='ghost'
-            display={['flex', 'flex', 'none', 'none']}
-            icon={<Image
-              src={'/icons/icon-hamburger.svg'} alt='menu'
-              height={30}
-              width={30} />}
-          />
+          <Link href={'/'} passHref>
+            <Button
+              aria-label='Open Menu'
+              variant='ghost'
+              display={['flex', 'flex', 'none', 'none']}
+              width={25}
+              height={25}
+              p={0}
+              my={"auto"}
+            >
+              <Image
+                src={'/icons/icon-hamburger.svg'} alt='menu'
+                layout='fill' />
+            </Button>
+          </Link>
+
         </Box>
       </Flex>
     </Container>
