@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Button, Container, Flex, Heading,Text } from '@chakra-ui/react'
+import { Box, Button, Container, Flex, Heading, Text } from '@chakra-ui/react'
 import Image from 'next/image'
 import TitleSection from '../../molecules/TitleSection'
 
@@ -10,8 +10,10 @@ interface FeaturesProps {
 }
 function Feature({ title, desc, logo }: FeaturesProps) {
   return (
-    <Box p={5} shadow='md' borderWidth='1px' borderRadius={"xl"}>
-      <Image src={`/logos/logo-${logo}.svg`} layout="intrinsic" alt={"menu"} width={50} height={50} />
+    <Box p={5} display={"flex"} flexDirection="column" alignItems={"center"} shadow='md' borderWidth='1px' borderRadius={"xl"}>
+      <Box width={100} height={100} position={"relative"}>
+        <Image src={`/logos/logo-${logo}.svg`} layout="fill" alt={""} />
+      </Box>
       <Heading fontSize='xl'>{title}</Heading>
       <Text mt={4}>{desc}</Text>
       <Button variant='darksolid' mt={6}>
@@ -23,7 +25,7 @@ function Feature({ title, desc, logo }: FeaturesProps) {
 export default function Extensions() {
   return (
     <>
-    <Container maxWidth={"xl"} py={6}>
+      <Container maxWidth={"xl"} py={6}>
         <Box textAlign="center">
           <TitleSection
             title="Download the extension"
