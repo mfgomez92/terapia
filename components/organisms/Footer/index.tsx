@@ -1,8 +1,8 @@
 import React from 'react'
-import { FormControl, Input, FormErrorMessage, Box, Button, Container, Flex, Heading, Text } from '@chakra-ui/react'
+import { Button, Container, Flex, Spacer } from '@chakra-ui/react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { IconButton, Spacer } from '@chakra-ui/react'
+
 export default function Footer() {
   return (
     <Container maxWidth={"full"} py={6} bg={"brand.verydarkblue"} >
