@@ -18,7 +18,6 @@ const fontSizes = {
 
 const styles = {
     global: {
-        // styles for the `body`
         body: {
             bg: 'whiteAlpha.900',
             color: colors.brand.grayishblue,
@@ -134,6 +133,26 @@ export const components = {
             ...lightsolid,
         },
     },
+    Tabs: {
+        variants: {
+            unstyled: {
+                tab: {
+                    borderInlineStart: 'none',
+                    borderBottom: `2px solid ${colors.brand.grayishblue}`,
+                    _hover: {
+                        color: colors.brand.softred,
+                    },
+                    _focus: {
+                        fontWeight: 500,
+                        color: colors.brand.verydarkblue,
+                        boxShadow: 'none',
+                        outline: "none",
+                        borderBottom: `4px solid ${colors.brand.softred}`,
+                    }
+                },
+            }
+        }
+    }
 }
 
 

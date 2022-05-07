@@ -4,6 +4,7 @@ import TitleSection from '../../molecules/TitleSection'
 import Section from '../Section'
 export default function Features() {
   const [isMobile] = useMediaQuery('(min-width: 768px)')
+
   return (
     <>
       <Container maxWidth={"xl"} py={6}>
@@ -14,13 +15,13 @@ export default function Features() {
         Your bookmarks sync between your devices so you can access them on the go.'/>
         </Box>
       </Container>
-      <Tabs isFitted orientation={isMobile ? "horizontal" : "vertical"}>
+      <Tabs isFitted variant={"unstyled"} defaultIndex={1}>
         <Box display="flex" flexDirection={"column"}>
           <Container maxWidth={"2xl"} textAlign="center"  >
-            <TabList borderColor={"brand.grayishblue"} borderBottom={"2px solid"} borderInlineStart={"none"}>
-              <Tab borderInlineStart={"none"}  borderBottom={"4px solid"}>Simple Bookmarking</Tab>
-              <Tab borderInlineStart={"none"} borderBottom={"4px solid"}>Speedy Searching</Tab>
-              <Tab borderInlineStart={"none"}borderBottom={"4px solid"}>Easy Sharing</Tab>
+            <TabList flexDirection={["column","column","row"]} >
+              <Tab>Simple Bookmarking</Tab>
+              <Tab>Speedy Searching</Tab>
+              <Tab>Easy Sharing</Tab>
             </TabList>
           </Container>
           <TabPanels>
