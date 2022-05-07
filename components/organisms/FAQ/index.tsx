@@ -15,8 +15,12 @@ export default function FAQ() {
           </Text>
         </Box>
         <Accordion py={6}>
-          <AccordionItem>
-            <AccordionButton >
+          <AccordionItem py={2}>
+            <AccordionButton _focus={{
+              boxShadow: 'none',
+              outline: "none",
+              bg:"whiteAlpha.500"
+            }}>
               <Heading _hover={{ color: "brand.softred" }} as="h6" fontSize={"lg"} color={"brand.verydarkblue"} fontWeight={500} flex='1' textAlign='left'>
                 What is Bookmark?
               </Heading>
@@ -32,8 +36,12 @@ export default function FAQ() {
             </AccordionPanel>
           </AccordionItem>
 
-          <AccordionItem>
-            <AccordionButton>
+          <AccordionItem py={2}>
+            <AccordionButton _focus={{
+              boxShadow: 'none',
+              outline: "none",
+              bg:"whiteAlpha.500"
+            }} >
               <Heading _hover={{ color: "brand.softred" }} as="h6" fontSize={"lg"} color={"brand.verydarkblue"} fontWeight={500} flex='1' textAlign='left'>
                 How can I request a new browser?
               </Heading>
@@ -49,8 +57,13 @@ export default function FAQ() {
               Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
             </AccordionPanel>
           </AccordionItem>
-          <AccordionItem>
-            <AccordionButton>
+
+          <AccordionItem py={2}>
+            <AccordionButton _focus={{
+              boxShadow: 'none',
+              outline: "none",
+              bg:"whiteAlpha.500"
+            }} >
               <Heading _hover={{ color: "brand.softred" }} as="h6" fontSize={"lg"} color={"brand.verydarkblue"} fontWeight={500} flex='1' textAlign='left'>
                 Is there a mobile app?
               </Heading>
@@ -66,8 +79,12 @@ export default function FAQ() {
             </AccordionPanel>
           </AccordionItem>
 
-          <AccordionItem>
-            <AccordionButton>
+          <AccordionItem py={2}>
+            <AccordionButton _focus={{
+              boxShadow: 'none',
+              outline: "none",
+              bg:"whiteAlpha.500"
+            }} >
               <Heading _hover={{ color: "brand.softred" }} as="h6" fontSize={"lg"} color={"brand.verydarkblue"} fontWeight={500} flex='1' textAlign='left'>
                 What about other Chromium browsers?
               </Heading>
