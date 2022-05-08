@@ -47,7 +47,7 @@ export default function Section(props: Props) {
                 <Box
                     position={'absolute'}
                     backgroundColor={'brand.softblue'}
-                    bottom={[-3, -5]}
+                    bottom={0}
                     height={["35%", "60%"]}
                     width={"70%"}
                     {...(direction === "left" ? { left: 0 } : { right: 0 })}
