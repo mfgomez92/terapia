@@ -3,8 +3,6 @@ import { Box, Container, Tabs, Tab, TabList, TabPanels, TabPanel, useMediaQuery 
 import TitleSection from '../../molecules/TitleSection'
 import Section from '../Section'
 export default function Features() {
-  const [isMobile] = useMediaQuery('(min-width: 768px)')
-
   return (
     <>
       <Container maxWidth={"xl"} py={6}>
@@ -31,9 +29,10 @@ export default function Features() {
                 subtitle='Organize your bookmarks however you like. Our simple drag-and-drop interface
             gives you complete control over how you manage your favourite sites.'
                 image={'/images/illustration-features-tab-1.svg'}
-                imageWidth={268}
-                imageHeight={173}
+                imageWidth={428}
+                imageHeight={276}
                 imageAlt='Bookmark in one click'
+                direction='left'
               />
             </TabPanel>
             <TabPanel px={0}>
@@ -42,9 +41,10 @@ export default function Features() {
                 subtitle='Our powerful search feature will help you find saved sites in no time at all.
               No need to trawl through all of your bookmarks.'
                 image={'/images/illustration-features-tab-2.svg'}
-                imageWidth={268}
-                imageHeight={173}
+                imageWidth={428}
+                imageHeight={276}
                 imageAlt='Intelligent search'
+                direction='left'
               />
             </TabPanel>
             <TabPanel px={0}>
@@ -53,9 +53,10 @@ export default function Features() {
                 subtitle='Easily share your bookmarks and collections with others.
               Create a shareable link that you can send at the click of a button.'
                 image={'/images/illustration-features-tab-3.svg'}
-                imageWidth={268}
-                imageHeight={173}
+                imageWidth={428}
+                imageHeight={276}
                 imageAlt='Share your bookmarks'
+                direction='left'
               />
             </TabPanel>
           </TabPanels>
