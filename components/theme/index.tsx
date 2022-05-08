@@ -133,6 +133,18 @@ export const components = {
             ...lightsolid,
         },
     },
+    Divider: {
+        variants: {
+            dotted: {
+                margin: '0',
+                padding: '0',
+                border: '5px',
+                borderStyle: 'dotted',
+                borderColor: colors.brand.grayishblue,
+                borderBottomWidth: "5px"
+            },
+        },
+    },
     Tabs: {
         variants: {
             unstyled: {
@@ -152,7 +164,7 @@ export const components = {
                 },
             }
         }
-    }
+    },
 }
 
 
